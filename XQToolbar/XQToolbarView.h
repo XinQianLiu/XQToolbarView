@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XQCollectionViewCell.h"
 
 @class XQToolbarView;
 @protocol XQToolbarViewDelegate <NSObject>
@@ -33,4 +32,12 @@
 @property (nonatomic, assign) CGSize                        itmeSize;               // Default CGSizeMake(50, 30);
 @property (nonatomic, assign) UIEdgeInsets                  itmeInsets;             // Default UIEdgeInsetsMake(0, 5, 0, 5)
 @property (nonatomic, assign) id <XQToolbarViewDelegate>    delegate;
+@end
+
+
+@interface XQCollectionViewCell : UICollectionViewCell
+
+@property (nonatomic) UILabel   *titleLabel;
+@property (nonatomic) UIView    *lineView;
+
 @end
