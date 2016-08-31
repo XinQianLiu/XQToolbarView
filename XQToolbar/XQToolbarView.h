@@ -28,9 +28,9 @@
 @property (nonatomic, strong) UIColor                       *selectLineColor;       // Default orangeColor
 @property (nonatomic, strong) UIColor                       *deselectTextColor;     // Default grayColor
 @property (nonatomic, strong) UIColor                       *deselectLineColor;     // Default whiteColor
-@property (nonatomic, strong) UIColor                       *itmeBackgroundColor;   // Default whiteColor
-@property (nonatomic, assign) CGSize                        itmeSize;               // Default CGSizeMake(50, 30);
-@property (nonatomic, assign) UIEdgeInsets                  itmeInsets;             // Default UIEdgeInsetsMake(0, 5, 0, 5)
+@property (nonatomic, strong) UIColor                       *itemBackgroundColor;   // Default whiteColor
+@property (nonatomic, assign) CGSize                        itemSize;               // Default CGSizeMake(50, 30);
+@property (nonatomic, assign) UIEdgeInsets                  itemInsets;             // Default UIEdgeInsetsMake(0, 5, 0, 5)
 @property (nonatomic, assign) id <XQToolbarViewDelegate>    delegate;
 @end
 

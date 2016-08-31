@@ -61,9 +61,9 @@ static NSString *const cellID = @"cellID";
         _selectLineColor = [UIColor orangeColor];
         _deselectTextColor = [UIColor grayColor];
         _deselectLineColor = [UIColor whiteColor];
-        _itmeBackgroundColor = [UIColor whiteColor];
-        _itmeSize = CGSizeMake(50, 30);
-        _itmeInsets = UIEdgeInsetsMake(0, 5, 0, 5);
+        _itemBackgroundColor = [UIColor whiteColor];
+        _itemSize = CGSizeMake(50, 30);
+        _itemInsets = UIEdgeInsetsMake(0, 5, 0, 5);
     }
     
     return self;
@@ -85,7 +85,7 @@ static NSString *const cellID = @"cellID";
     XQCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellID forIndexPath:indexPath];
     
     cell.titleLabel.text = self.titlesArray[indexPath.row];
-    cell.contentView.backgroundColor = _itmeBackgroundColor;
+    cell.contentView.backgroundColor = _itemBackgroundColor;
     if (_selectedIndex == indexPath.row) {
         cell.titleLabel.textColor = _selectTextColor;
         cell.lineView.backgroundColor = _selectLineColor;
@@ -124,12 +124,12 @@ static NSString *const cellID = @"cellID";
 #pragma mark - UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return _itmeSize;
+    return _itemSize;
 }
 
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    return _itmeInsets;
+    return _itemInsets;
 }
 
 

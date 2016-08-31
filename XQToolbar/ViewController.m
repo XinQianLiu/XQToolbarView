@@ -52,9 +52,9 @@
      toolbarView.selectLineColor = [UIColor greenColor];
      toolbarView.deselectTextColor = [UIColor blueColor];
      toolbarView.deselectLineColor = [UIColor yellowColor];
-     toolbarView.itmeSize = CGSizeMake(100, 30);
-     toolbarView.itmeBackgroundColor = [UIColor redColor];
-     toolbarView.itmeInsets = UIEdgeInsetsMake(0, 10, 0, 10);
+     toolbarView.itemSize = CGSizeMake(100, 30);
+     toolbarView.itemBackgroundColor = [UIColor redColor];
+     toolbarView.itemInsets = UIEdgeInsetsMake(0, 10, 0, 10);
      */
     [self.view addSubview:toolbarView];
     // Do any additional setup after loading the view, typically from a nib.
