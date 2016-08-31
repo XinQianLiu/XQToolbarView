@@ -15,6 +15,8 @@
 		B60AB1751D7570A00008230D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B60AB1731D7570A00008230D /* LaunchScreen.storyboard */; };
 		B60AB1801D7570A00008230D /* XQToolbarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B60AB17F1D7570A00008230D /* XQToolbarTests.m */; };
 		B60AB18B1D7570A00008230D /* XQToolbarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B60AB18A1D7570A00008230D /* XQToolbarUITests.m */; };
+		B60AB19A1D7570B00008230D /* XQToolbarView.m in Sources */ = {isa = PBXBuildFile; fileRef = B60AB1991D7570B00008230D /* XQToolbarView.m */; };
+		B60AB19D1D75739F0008230D /* XQCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60AB19C1D75739F0008230D /* XQCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		B60AB1861D7570A00008230D /* XQToolbarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XQToolbarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60AB18A1D7570A00008230D /* XQToolbarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XQToolbarUITests.m; sourceTree = "<group>"; };
 		B60AB18C1D7570A00008230D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B60AB1981D7570B00008230D /* XQToolbarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQToolbarView.h; sourceTree = "<group>"; };
+		B60AB1991D7570B00008230D /* XQToolbarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQToolbarView.m; sourceTree = "<group>"; };
+		B60AB19B1D75739F0008230D /* XQCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XQCollectionViewCell.h; sourceTree = "<group>"; };
+		B60AB19C1D75739F0008230D /* XQCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XQCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,7 @@
 				B60AB1691D75709F0008230D /* AppDelegate.m */,
 				B60AB16B1D7570A00008230D /* ViewController.h */,
 				B60AB16C1D7570A00008230D /* ViewController.m */,
+				B60AB19E1D757A650008230D /* XQToolbar */,
 				B60AB16E1D7570A00008230D /* Main.storyboard */,
 				B60AB1711D7570A00008230D /* Assets.xcassets */,
 				B60AB1731D7570A00008230D /* LaunchScreen.storyboard */,
@@ -138,6 +145,17 @@
 				B60AB18C1D7570A00008230D /* Info.plist */,
 			);
 			path = XQToolbarUITests;
+			sourceTree = "<group>";
+		};
+		B60AB19E1D757A650008230D /* XQToolbar */ = {
+			isa = PBXGroup;
+			children = (
+				B60AB1981D7570B00008230D /* XQToolbarView.h */,
+				B60AB1991D7570B00008230D /* XQToolbarView.m */,
+				B60AB19B1D75739F0008230D /* XQCollectionViewCell.h */,
+				B60AB19C1D75739F0008230D /* XQCollectionViewCell.m */,
+			);
+			name = XQToolbar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,7 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B60AB16D1D7570A00008230D /* ViewController.m in Sources */,
+				B60AB19A1D7570B00008230D /* XQToolbarView.m in Sources */,
 				B60AB16A1D75709F0008230D /* AppDelegate.m in Sources */,
+				B60AB19D1D75739F0008230D /* XQCollectionViewCell.m in Sources */,
 				B60AB1671D75709F0008230D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
