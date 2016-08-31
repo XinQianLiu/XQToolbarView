@@ -137,16 +137,17 @@ static NSString *const cellID = @"cellID";
 - (void)setSelectedIndex:(NSInteger)selectedIndex
 {
     _selectedIndex = selectedIndex;
-    
-    if (selectedIndex < _titlesArray.count) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            NSIndexPath *path = [NSIndexPath indexPathForItem:selectedIndex inSection:0];
-            [_collectionView selectItemAtIndexPath:path animated:NO scrollPosition:UICollectionViewScrollPositionCenteredHorizontally];
-            [_collectionView reloadData];
-        });
+    if ([NSThread isMainThread]) {
+        [self performSelector:@selector(toSelectItem) withObject:nil afterDelay:0.1f];
     }
 }
 
+- (void)toSelectItem
+{
+    NSIndexPath *path = [NSIndexPath indexPathForItem:_selectedIndex inSection:0];
+    [_collectionView selectItemAtIndexPath:path animated:NO scrollPosition:UICollectionViewScrollPositionCenteredHorizontally];
+    [_collectionView reloadData];
+}
 
 - (void)setTitlesArray:(NSArray *)titlesArray
 {

@@ -43,6 +43,7 @@
         toolbarView.titlesArray = titlesArray;
     }
     
+    toolbarView.selectedIndex = 7;
     toolbarView.frame = CGRectMake(0, 40, [UIScreen mainScreen].bounds.size.width, 30);
     /**
      optional:
