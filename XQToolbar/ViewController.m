@@ -59,6 +59,7 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+#pragma mark - XQToolbarViewDelegate
 - (void)didSelectIndex:(NSInteger)selectIndex toolbarView:(XQToolbarView *)toolbarView
 {
     NSLog(@"\nindex-->%ld\ntoolbarView-->%p",selectIndex,&toolbarView);
