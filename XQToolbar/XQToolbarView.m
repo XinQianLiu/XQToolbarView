@@ -145,7 +145,7 @@ static NSString *const cellID = @"cellID";
 - (void)toSelectItem
 {
     NSIndexPath *path = [NSIndexPath indexPathForItem:_selectedIndex inSection:0];
-    [_collectionView selectItemAtIndexPath:path animated:NO scrollPosition:UICollectionViewScrollPositionCenteredHorizontally];
+    [_collectionView selectItemAtIndexPath:path animated:YES scrollPosition:UICollectionViewScrollPositionCenteredHorizontally];
     [_collectionView reloadData];
 }
 

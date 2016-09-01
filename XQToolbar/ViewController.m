@@ -43,7 +43,9 @@
         toolbarView.titlesArray = titlesArray;
     }
     
-    toolbarView.selectedIndex = 7;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0f * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        toolbarView.selectedIndex = 7;
+    });
     toolbarView.frame = CGRectMake(0, 40, [UIScreen mainScreen].bounds.size.width, 30);
     /**
      optional:
